@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meant2Wear Co</title>
+        <head>
+            <meta charset="UTF-8">
+            <title>East dark mode</title>
+            <style>
+                body{
+                  margin: 0;
+                  padding: 0;
+                  font-family: sans-serif;
+                }
+                main{
+                  margin: 5vh 15%;
+                }
+                h1{
+                  font-size: 40px;
+                  font-weight: 400;
+                  text-align: center;
+                }
+                img{
+                  width:50%;
+                  height:auto;
+                }
+                p{
+                  text-align: justify;
+                  font-size: 18px;
+                }
+                label{
+                    position: absolute;
+                    width: 45px;
+                    height: 22px;
+                    right: 20px;
+                    top: 20px;
+                    border: 2px solid;
+                    border-radius: 20px;
+                }
+                label:before{
+                    position: absolute;
+                    content: '';
+                    width:20px;
+                    height: 20px;
+                    left: 1px;
+                    top: 1px;
+                    border-radius: 50%;
+                    background: #000;
+                    cursor: pointer;
+                    transition: 0.4s;
+                }
+                label.active:before{
+                    left: 24px;
+                    background: #fff;
+                }
+                body.night{
+                    background: #0f0f0f;
+                    color: #fff;
+                }
+                @media screen and (min-width:900px) {
+                  .respon{
+                    display: flex;
+                  }
+                  img{
+                    height:50%;
+                    width:auto;
+                    padding-top: 3vh;
+                    padding-right: 5%;
+                  }
+                  p{
+                    max-width: 80%;
+                    line-height: 30px;
+                  }
+                }
+            </style>
+        </head>
+        <body>
+          <header>
+            <label  id="dark-change"></label>
+          </header>
+              </div>
+          </main>
+            <script>
+                var content = document.getElementsByTagName('body')[0];
+                var darkMode = document.getElementById('dark-change');
+                darkMode.addEventListener('click', function(){
+                    darkMode.classList.toggle('active');
+                    content.classList.toggle('night');
+                })
+            </script>
+        </body>
+        </html>
+    </head>
+    </html>
+    <body>
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="navbar-left">
+                    <svg
+                        class="block"
+                        focusable="false"
+                        height="100%"
+                        viewBox="0 0 62 62"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+
+                    </svg>
+                    <div>DashBoard</div>
+                    <div>Deals</div>
+                    <div>Gift Cards</div>
+                </div>
+                <div class="navbar-right">
+                    <div class="find-a-store">
+                        <svg
+                            aria-hidden="true"
+                            class="valign-middle pr2"
+                            focusable="false"
+                            preserveAspectRatio="xMidYMid meet"
+                            style="
+                                width: 32px;
+                                height: 32px;
+                                overflow: visible;
+                                fill: currentColor;
+                            "
+                            viewBox="0 0 24 24"
+                        >
+
+                        </svg>
+                    </div>
+                    <div class="sign-in">Sign in</div>
+                    <div class="join-now">Join now</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product-container">
+                <div class="product" style="background-color: #050505d3">
+                    <div class="product-left">
+                        <img
+                            alt="Starbucks products with gold stars featured on a pink and purple gradient background."
+                            class="block"
+                            src="https://cdn.discordapp.com/attachments/980000384670113843/1071667915557965834/ezgif-4-e4f1de376b.gif"
+                        />
+                    </div>
+                    <div class="product-right">
+                        <div
+                            class="product-title"
+                            style="font-size: 18px; margin-top: 20px"
+                        >
+                            Summer is better with new sneakers!
+                        </div>
+                        <div
+                            class="product-button product-button-white"
+                            style="margin-top: 40px"
+                        >
+                            Join Meant2Wear for Deals
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product" style="background-color: #d1c8c8">
+                    <div class="product-right">
+                        <div
+                            class="product-title"
+                            style="
+                                font-size: 48px;
+                                margin-top: 20px;
+                                color: #1e3932;
+                            "
+                        >
+                            Summer’s Best deals
+                        </div>
+                        <div class="product-description">
+                            Introducing the Off-White x Air Jordan 1 Retro High OG 'UNC' AQ0818-148.
+                        </div>
+                        <div
+                            class="product-button product-button-black"
+                            style="margin-top: 10px"
+                        >
+                            Learn more
+                        </div>
+                    </div>
+                    <div class="product-left">
+                        <img
+                            alt="Two yellow iced drinks with pineapple inclusions in tall glasses."
+                            class="block"
+                            src="https://cdn.discordapp.com/attachments/980000384670113843/1071670668216782888/ezgif-4-476ef38b92.gif"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product" style="background-color: #494747">
+                    <div class="product-left">
+                        <img
+                            alt="Two marbled iced coffee drinks in tall glasses."
+                            class="block"
+                            src="https://cdn.flightclub.com/TEMPLATE/186212/1.jpg"
+                        />
+                    </div>
+                    <div class="product-right">
+                        <div
+                            class="product-title"
+                            style="
+                                font-size: 48px;
+                                margin-top: 60px;
+                                color: white;
+                            "
+                        >
+                        AIR JORDAN 4 RETRO 'UNIVERSITY BLUE'
+
+                        </div>
+                        <div
+                            class="product-description"
+                            style="color: white; font-size: 22px"
+                        >
+                            Try the new AIR JORDAN 4 RETRO 'UNIVERSITY BLUE'
+                            all size fit all.
+                        </div>
+                        <div
+                            class="product-button product-button-white"
+                            style="margin-top: 10px"
+                        >
+                            Learn more
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product" style="background-color: #e0dcd8">
+                    <div class="product-right">
+                        <div
+                            class="product-title"
+                            style="
+                                font-size: 48px;
+                                margin-top: 60px;
+                                color: #1e3932;
+                            "
+                        >
+                            Back-to-school smiles
+                        </div>
+                        <div
+                            class="product-description"
+                            style="
+                                font-size: 24px;
+                                max-width: 500px;
+                                text-align: center;
+                            "
+                        >
+                        Just Rick It JD Shoes Custom Rick And Morty Sneakers.
+                        </div>
+                        <div
+                            class="product-button product-button-black"
+                            style="margin-top: 10px"
+                        >
+                        Learn more 
+                        </div>
+                    </div>
+                    <div class="product-left">
+                        <img
+                            alt="Gift card with an illustrated backpack and “BACK AT IT!” message."
+                            class="block"
+                            src="https://cdn.shopify.com/s/files/1/0020/5691/3014/products/Just-Rick-It-JD-Shoes-Custom-Rick-And-Morty-Sneakers-BRB02-1-GearWanta_1500x1500.jpg?v=1662694987"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="product" style="background-color: #9bf5b4">
+                    <div class="product-left">
+                        <img
+                            alt="Two marbled iced coffee drinks in tall glasses."
+                            class="block"
+                            src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-78943.jpg"
+                        />
+                    </div>
+                    <div class="product-right">
+                        <div
+                            class="product-title"
+                            style="
+                                font-size: 48px;
+                                margin-top: 60px;
+                                color: #1e3932;
+                            "
+                        >
+                            Anytime protein
+                        </div>
+                        <div
+                            class="product-description"
+                            style="color: #1e3932; font-size: 22px"
+                        >
+                            Try the new Chocolate Cream Cold Brew with silky,
+                            chocolaty cold foam. Or go for a Vanilla Sweet Cream
+                            Cold Brew with house-made vanilla-flavored sweet
+                            cream.
+                        </div>
+                        <div
+                            class="product-button product-button-black"
+                            style="margin-top: 10px"
+                        >
+                            Order now
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                *Starbucks Rewards is available at participating stores. Some
+                restrictions apply. For full program details, visit
+                starbucks.com/rewards
+            </div>
+            <div style="margin-top: 50px">
+                **Impossible is a registered trademark of Impossible Foods Inc.
+                Used under license.
+            </div>
+        </div>
+    </body>
+</html>
